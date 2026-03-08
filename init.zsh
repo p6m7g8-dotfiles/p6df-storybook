@@ -31,19 +31,21 @@ p6df::modules::storybook::mcp() {
   p6_return_void
 }
 
-#  Environment:	 STORYBOOK_URL
 ######################################################################
 #<
 #
-# Function: p6df::modules::storybook::mcp::env()
+# Function: p6df::modules::storybook::init(_module, dir)
+#
+#  Args:
+#	_module -
+#	dir -
 #
 #  Environment:	 STORYBOOK_URL
 #>
-#/ Synopsis
-#/    Maps Storybook env vars to MCP-specific vars
-#/
 ######################################################################
-p6df::modules::storybook::mcp::env() {
+p6df::modules::storybook::init() {
+  local _module="$1"
+  local dir="$2"
 
   if p6_string_blank "$STORYBOOK_URL"; then
     p6_env_export "STORYBOOK_URL" "http://localhost:6006"
