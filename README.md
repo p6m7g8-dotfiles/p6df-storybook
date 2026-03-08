@@ -17,9 +17,8 @@
 
 ## Summary
 
-p6df module for Storybook: component library tooling and MCP server
-(`storybook-mcp` via npm) for AI-driven component browsing and inspection.
-Defaults `STORYBOOK_URL` to `http://localhost:6006`.
+Integrates Storybook into the p6df shell framework. Sets a default `STORYBOOK_URL` at
+shell init and installs the Storybook MCP server.
 
 ## Contributing
 
@@ -38,10 +37,12 @@ Defaults `STORYBOOK_URL` to `http://localhost:6006`.
 ##### p6df-storybook/init.zsh
 
 - `p6df::modules::storybook::deps()`
+- `p6df::modules::storybook::init(_module, dir)`
+  - Args:
+    - _module
+    - dir
 - `p6df::modules::storybook::mcp()`
   - Synopsis: Installs Storybook MCP server
-- `p6df::modules::storybook::mcp::env()`
-  - Synopsis: Maps Storybook env vars to MCP-specific vars
 
 ## Hierarchy
 
