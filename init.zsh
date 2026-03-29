@@ -28,6 +28,9 @@ p6df::modules::storybook::mcp() {
 
   p6_js_npm_global_install "storybook-mcp"
 
+  p6df::modules::anthropic::mcp::server::add "storybook" "npx" "-y" "storybook-mcp"
+  p6df::modules::openai::mcp::server::add "storybook" "npx" "-y" "storybook-mcp"
+
   p6_return_void
 }
 
