@@ -37,22 +37,15 @@ p6df::modules::storybook::mcp() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::storybook::init(_module, dir)
+# Function: words storybook $STORYBOOK_URL = p6df::modules::storybook::profile::mod()
 #
-#  Args:
-#	_module -
-#	dir -
+#  Returns:
+#	words - storybook $STORYBOOK_URL
 #
 #  Environment:	 STORYBOOK_URL
 #>
 ######################################################################
-p6df::modules::storybook::init() {
-  local _module="$1"
-  local dir="$2"
+p6df::modules::storybook::profile::mod() {
 
-  if p6_string_blank "$STORYBOOK_URL"; then
-    p6_env_export "STORYBOOK_URL" "http://localhost:6006"
-  fi
-
-  p6_return_void
+  p6_return_words 'storybook' "$"
 }
