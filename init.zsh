@@ -47,5 +47,5 @@ p6df::modules::storybook::mcp() {
 ######################################################################
 p6df::modules::storybook::profile::mod() {
 
-  p6_return_words 'storybook' '$STORYBOOK_URL'
+  p6_return_words 'storybook' "$"
 }
