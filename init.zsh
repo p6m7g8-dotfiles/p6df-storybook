@@ -33,19 +33,3 @@ p6df::modules::storybook::mcp() {
 
   p6_return_void
 }
-
-######################################################################
-#<
-#
-# Function: words storybook $STORYBOOK_URL = p6df::modules::storybook::profile::mod()
-#
-#  Returns:
-#	words - storybook $STORYBOOK_URL
-#
-#  Environment:	 STORYBOOK_URL
-#>
-######################################################################
-p6df::modules::storybook::profile::mod() {
-
-  p6_return_words 'storybook' "$"
-}
