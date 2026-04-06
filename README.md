@@ -17,8 +17,7 @@
 
 ## Summary
 
-Integrates Storybook into the p6df shell framework. Sets a default `STORYBOOK_URL` at
-shell init and installs the Storybook MCP server.
+TODO: Add a short summary of this module.
 
 ## Contributing
 
@@ -37,10 +36,6 @@ shell init and installs the Storybook MCP server.
 ##### p6df-storybook/init.zsh
 
 - `p6df::modules::storybook::deps()`
-- `p6df::modules::storybook::init(_module, dir)`
-  - Args:
-    - _module
-    - dir
 - `p6df::modules::storybook::mcp()`
   - Synopsis: Installs Storybook MCP server
 
